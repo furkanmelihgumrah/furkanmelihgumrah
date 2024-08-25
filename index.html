@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CV WEBSİTE</title>
+<title>Cv Website</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -10,15 +10,54 @@
 }
 
 body {
-  margin: 0;
+  margin:0;
   font-family: Arial, Helvetica, sans-serif;
 }
-  .sidenav {
-    height: 100%;
-    width:200px;
-  }
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:chartreuse;
+  overflow-x: hidden;
+}
+/* Side navigation links */
+.sidenav a {
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+/* Style the content */
+.content {
+  margin-left: 200px;
+  padding-left: 75px;
+}
 </style>
 </head>
 <body>
+
+<div class="sidenav">
+  <a href="tel:05510094368">telefon:05510094368</a>
+  <a href="mailto:furkanmelihgumrah@gmail.com">furkanmelihgumrah@gmail.com</a>
+  <a href="https://github.com/furkanmelihgumrah">Github</a>
+</div>
+
+<div class="content">
+  <h2>Furkan Melih Gümrah</h2>
+  <p>A full-height, fixed sidenav and content.</p>
+</div>
+
 </body>
 </html>
