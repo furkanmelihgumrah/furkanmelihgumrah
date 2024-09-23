@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Website</title>
-<meta charset="utf-8">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-
+   <h1>Dark Mode Example</h1> 
+  
+   <button onclick="document.getElementById('kaynak').src='light.png'">Light Mode</button>
+    <img id="kaynak" src="light.png" style="width: 100;">
+   <button onclick="document.getElementById('kaynak').src='dark.png'">Dark Mode</button>
 </body>
 </html>
