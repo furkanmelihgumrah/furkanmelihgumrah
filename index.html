@@ -15,7 +15,7 @@
       font-size: 25px;  
     }
     .dark-mode{
-        background-color: rgb(54, 69, 79);
+        background-color: rgb(40, 40, 43);
         color: white;
     }
     </style>
@@ -28,6 +28,17 @@
   
 
     <script>
+    var img = document.getElementById('kaynak')
+    const images = ["dark"]
+    var imagesLength= images.length;
+    var x=0;
+    function changeImages(){
+    img.src=images[x]+".png";
+    x=x+1;
+    if(x==imagesLength){
+        x=0;
+    } 
+    }
     function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode")
