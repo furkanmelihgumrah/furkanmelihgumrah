@@ -1,4 +1,4 @@
 ## Selamlar...
-Websitem: www.furkanmelihgumrah.github.io/furkanmelihgumrah/
+Websitem: furkanmelihgumrah.github.io/furkanmelihgumrah/
 
 
