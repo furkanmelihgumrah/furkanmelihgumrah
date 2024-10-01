@@ -3,46 +3,68 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>website</title>
+    <title>ıııı</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
     <style>
         body{
+    /*  background-image: url('cool-background.png');*/
       padding: 25px;
       background-color: white;
       color: rgb(6, 1, 1);
       font-size: 25px;  
     }
-    .dark-mode{
-        background-color: rgb(40, 40, 43);
+
+      .dark-mode{
+        background-color: #121212;
         color: white;
+      }
+      .light-mode{
+        background-color: white;
+        color: black;
+      }
+    #bt2{
+      position: relative;
+    top: 0px;
+    left: 1450px;
+    }
+    #bt1{
+      position: relative;
+    top: 0px;
+    left: 1364px;
     }
     </style>
 </head>
 <body>
-   <h1>Dark Mode Example</h1> 
-  
-   <button onclick="changeImages()" onclick="myFunction()" onclick="document.getElementById('kaynak').src='light.png'">Change Theme</button>
-    <img id="kaynak" src="light.png" style="width: 100;">
-  
+  <button id="bt2"  onclick="lightMode()"><img width="25" src="light.png"></button>
+  <button id="bt1"  onclick="darkMode()"><img width="25" src="dark.png"></button>
 
-    <script>
-    var img = document.getElementById('kaynak')
-    const images = ["dark"]
-    var imagesLength= images.length;
-    var x=0;
-    function changeImages(){
-    img.src=images[x]+".png";
-    x=x+1;
-    if(x==imagesLength){
-        x=0;
-    } 
+    <h1>Furkan Melih Gümrah</h1>
+
+    <p>
+        Bu site şuanda test amaçlı kullanılmaktadır.Daha sonra kişisel websitesi olarak kullanılacaktır.
+    </p>
+
+    
+
+   
+
+
+<script>
+    function darkMode(){
+        let element = document.body;      
+        element.className= "dark-mode";
+       
     }
-    function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode")
-    }
-    </script>
+    function lightMode() {
+            let element = document.body;
+            element.className = "light-mode";
+         
+        }
+</script>
+
+    
+   
 </body>
 </html>
